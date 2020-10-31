@@ -1,0 +1,8 @@
+apiVersion: expanse.blog.webischia.com/v1beta1
+kind: SpaceShips
+metadata:
+  name: spaceships-sample
+spec:
+  Name: MyShip
+  Class: Corvette
+  Owner: Earth

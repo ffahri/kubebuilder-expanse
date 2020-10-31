@@ -1,0 +1,7 @@
+domain: blog.webischia.com
+repo: simplekubebuilder
+resources:
+- group: expanse
+  kind: SpaceShips
+  version: v1beta1
+version: "2"

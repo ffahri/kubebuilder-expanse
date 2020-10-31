@@ -1,0 +1,24 @@
+# permissions for end users to edit spaceships.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: spaceships-editor-role
+rules:
+- apiGroups:
+  - expanse.blog.webischia.com
+  resources:
+  - spaceships
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - expanse.blog.webischia.com
+  resources:
+  - spaceships/status
+  verbs:
+  - get
